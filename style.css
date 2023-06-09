@@ -32,6 +32,15 @@ body{
 .form form {
     margin: 20px 0;
 }
+.form form .name-datails{
+    display: flex;
+}
+form .name-datails .field:first-child{
+    margin-right: 10px;
+}
+form .name-datails .field:last-child{
+    margin-left: 10px;
+}
 .form form .error-txt{
     color: #721c24;
     background: #f8d7da;
@@ -46,6 +55,9 @@ body{
     flex-direction: column;
     margin-bottom: 10px;
 }
+.form form .field label{
+    margin-bottom: 2px;
+}
 .form form .field input{
     outline: none;
 }
@@ -57,4 +69,29 @@ body{
     border: 1px solid #ccc;
     border-radius: 5px ;
      
+}
+.form form .image input{
+font-size: 17px;
+}
+.form form .button input{
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a {
+    color: #333;
+}
+.form .link a:hover{
+    text-decoration: underline;
 }
