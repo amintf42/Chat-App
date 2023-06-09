@@ -54,6 +54,7 @@ form .name-datails .field:last-child{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    position: relative;
 }
 .form form .field label{
     margin-bottom: 2px;
@@ -83,6 +84,14 @@ font-size: 17px;
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
+}
+.form form .field i{
+position: absolute;
+right:15px ;
+color: #ccc;
+top: 70%;
+transform: translateY(-50%);
+cursor: pointer;
 }
 .form .link{
     text-align: center;
