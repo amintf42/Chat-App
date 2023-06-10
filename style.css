@@ -108,6 +108,10 @@ form .name-details .field:last-child {
     transform: translateY(-50%);
     cursor: pointer;
 }
+.form form .field i.active::before{
+    content: "\f070";
+    color: #333;
+}
 
 .form .link {
     text-align: center;
@@ -179,6 +183,7 @@ form .name-details .field:last-child {
     align-items: center;
     position: relative;
     justify-content: space-between;
+
 }
 
 .users .search .text {
@@ -194,6 +199,13 @@ form .name-details .field:last-child {
     font-size: 16px;
     border-radius: 5px 0 0 5px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .users .search button {
