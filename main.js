@@ -1,20 +1,21 @@
 // show and hide password
-let pswrdfiled = document.querySelector("form input[type='password']") ;
-let toggleBtn =  document.querySelector(".form .field i");
+const pswrdfiled = document.querySelector("form input[type='password']") ;
+const toggleBtn =  document.querySelector(".form .field i");
+// users search
+const searchbar = document.querySelector(".users .search input") ;
+const searchbtn = document.querySelector(".users .search button");
 
 toggleBtn.addEventListener("click" , ()=>{
     if(pswrdfiled.type == "password"){
         pswrdfiled.type = "text";
-        toggleBtn.classList.add("active");
+        toggleBtn.classList.add("activer");
     }else{
         pswrdfiled.type = "password";
-        toggleBtn.classList.remove("active");
+        toggleBtn.classList.remove("activer");
     }
 });
 
-// users search
-let searchbar = document.querySelector(".users .search input") ;
-let searchbtn = document.querySelector(".users .search button");
+
 
 searchbtn.onclick = ()=>{
     // searchbar.classList.toggle("active")
