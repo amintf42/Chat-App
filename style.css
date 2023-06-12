@@ -57,6 +57,7 @@ form .name-details .field:last-child {
     border-radius: .5rem;
     margin-bottom: 10px;
     border: 1px solid #f5c6cb;
+    display: none;
 }
 
 .form form .field {
@@ -362,7 +363,7 @@ form .name-details .field:last-child {
     font-size: 17px;
     border: 1px solid #ccc;
     padding: 0 13px;
-    border-radius: 5px 0 0 5px;
+    /* border-radius: 0 0 0 5px; */
     outline: none;
 }
 
@@ -371,6 +372,16 @@ form .name-details .field:last-child {
     border: none;
     outline: none;
     border-radius: 0 5px 5px 0;
+    background: #333;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+.typing-area button.upload-file{
+    width: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
     background: #333;
     color: #fff;
     font-size: 19px;
